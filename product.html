@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ShopKart | Products</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="logo">ShopKart</div>
+  <input class="search" placeholder="Search products">
+  <div class="nav-links">
+    <a href="wishlist.html">❤️ Wishlist</a>
+    <a href="orders.html">📦 Orders</a>
+    <a href="cart.html">🛒 Cart (<span id="cartCount">0</span>)</a>
+  </div>
+</nav>
+
+<section class="products">
+
+<div class="product-card">
+  <img src="https://m.media-amazon.com/images/I/61mpMH5TzkL._AC_UL320_.jpg">
+  <h4>Smart Watch</h4>
+  <p class="price">₹1,999</p>
+  <p class="rating">⭐⭐⭐⭐☆</p>
+  <button onclick="addToCart('Smart Watch',1999)">Add to Cart</button>
+  <button onclick="addToWishlist('Smart Watch')">♡ Wishlist</button>
+</div>
+
+<div class="product-card">
+  <img src="https://m.media-amazon.com/images/I/61CGHv6kmWL._AC_UL320_.jpg">
+  <h4>Wireless Headphones</h4>
+  <p class="price">₹1,499</p>
+  <p class="rating">⭐⭐⭐⭐⭐</p>
+  <button onclick="addToCart('Headphones',1499)">Add to Cart</button>
+  <button onclick="addToWishlist('Headphones')">♡ Wishlist</button>
+</div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
